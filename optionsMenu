@@ -1,0 +1,32 @@
+n1 = int(input('First Value: \n'))
+n2 = int(input('Second Value: \n'))
+option = 0
+while option != 5:
+    print('''    [ 1 ] Add
+    [ 2 ] Multiply
+    [ 3 ] Bigger
+    [ 4 ] New Numbers
+    [ 5 ] Quit Program
+    ''')
+    option = int(input('Choose your option? \n'))
+    if option == 1:
+        result = n1 + n2
+        print(f'The sum of {n1} and {n2} is {result}')
+    elif option == 2:
+        result = n1 * n2
+        print(f'The multiply of the numbers is {result}')
+    elif option == 3:
+        if n1 > n2 :
+            print(f'The first numbers is the bigger one!')
+        else:
+            print(f'The second number is the bigger one!')
+    elif option == 4:
+        print(f'Choose again both of the values!')
+        n1 = int(input('First Value: \n'))
+        n2 = int(input('Second Value: \n'))
+    elif option == 5:
+        print(f'Finishing....')
+    else:
+        print("Invalid option!")
+    print('=-=' * 10)
+print('End of the program, come back anytime!')
