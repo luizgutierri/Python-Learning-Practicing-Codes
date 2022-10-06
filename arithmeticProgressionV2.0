@@ -1,0 +1,12 @@
+print('-=' * 6)
+print('PA Generator')
+print('-=' * 6)
+first = int(input('First Therm:\n'))
+reason = int(input('P.A. Reason:\n'))
+therm = first
+cont = 1
+while cont <= 10:
+    print(f'{therm} → ', end='')
+    therm += reason
+    cont += 1
+print('End of the script.')
